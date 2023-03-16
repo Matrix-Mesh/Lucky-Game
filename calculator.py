@@ -20,7 +20,8 @@ def bt_clear():
     global expression 
     expression = "" 
     scvalue.set("")
-    
+
+# 'bt_equal':This method calculates the expression  present in input field
 def bt_equal():
     global expression
     result = str(eval(expression)) # 'eval':This function is used to evaluates the string expression directly
@@ -29,6 +30,7 @@ def bt_equal():
 
 expression = ""
 
+# 'StringVar()' :It is used to get the instance of input field
 scvalue = StringVar()
 scvalue.set("")        # Setting the default value empty
 
